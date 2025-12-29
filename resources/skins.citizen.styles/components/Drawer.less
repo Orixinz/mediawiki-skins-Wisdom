@@ -1,4 +1,7 @@
 .citizen-drawer {
+	display: flex;
+	flex-direction: var( --header-direction );
+	overflow: scroll;
 	&__card {
 		.mixin-citizen-header-card( start );
 		transform-origin: var( --transform-origin-offset-start ) var( --transform-origin-offset-end );
@@ -40,7 +43,6 @@
 		align-items: center;
 		justify-content: center;
 		padding: var( --space-md );
-		border-bottom: var( --border-subtle );
 	}
 
 	// Keep aspect ratio
@@ -53,37 +55,67 @@
 		display: flex;
 		flex-direction: column;
 		gap: var( --space-xxs );
+		width: 100%;
 	}
 
 	&__menu {
 		--size-icon: 1rem;
-		display: grid;
-		grid-template-columns: repeat( auto-fit, minmax( 15rem, auto ) );
+		display: flex;
+		flex-direction: var( --header-direction );
 		gap: var( --space-sm );
 		justify-content: center;
 		max-width: inherit;
 		padding: var( --space-xs );
 		margin-bottom: var( --space-xs );
 
+		.citizen-menu {
+			height: 100%;
+			overflow: scroll;
+		}
+
 		.mw-list-item a {
 			border-radius: var( --border-radius-base );
 		}
 	}
+
 }
 
-@media ( min-width: @min-width-breakpoint-tablet ) {
-	.citizen-drawer {
-		&__logo img {
-			// Bigger logo
-			height: 5rem;
-		}
-	}
-}
 
-@media ( min-width: @min-width-breakpoint-desktop ) {
+@media ( max-width: @max-width-breakpoint-tablet ) {
 	.citizen-drawer {
-		&__header {
-			justify-content: flex-start;
+		--header-direction: column;
+
+		border: var( --border-width-base ) solid var( --border-color-base );
+		border-radius: var( --border-radius-medium );
+		box-shadow: var( --box-shadow-large );
+		.mixin-citizen-frosted-glass;
+
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: calc(100vh - var( --header-size ));
+
+		overflow: scroll;
+
+		&__menu {
+			overflow: scroll;
 		}
-	}
+
+		display: none;
+  	}
+
+
+   // this is kind of a hacky solution to creating a mobile-exclusive toggle button for the drawer
+   #citizen-drawer-toggle[open] + .citizen-drawer {
+  		display: block;
+   }
+   #citizen-drawer-toggle::before {
+  		display: none;
+   }
+
+   #citizen-drawer-toggle {
+ 		display: flex;
+ 		align-items: center;
+   }
 }

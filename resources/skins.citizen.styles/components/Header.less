@@ -1,7 +1,10 @@
 .citizen-header {
+	--header-logo-size:~'calc( var( --header-size ) - var(  --space-xs ) * 2 )';
 	--header-icon-size: ~'calc( var( --header-button-size ) / 2 )';
-	--header-button-size: ~'calc( var( --header-size ) - var(  --space-xs ) * 2 )';
+	--header-button-size: 40px;
 	position: fixed;
+	width: var(--header-width);
+	height: var(--header-height);
 	top: var( --header-inset-block-start );
 	right: var( --header-inset-inline-end );
 	bottom: var( --header-inset-block-end );
@@ -11,7 +14,7 @@
 	flex-direction: var( --header-direction );
 	gap: var( --space-xxs );
 	padding: ~'var( --space-xs ) max( env( safe-area-inset-right ), var( --space-xs ) ) max( env( safe-area-inset-bottom ), var( --space-xs ) ) max( env( safe-area-inset-left ), var( --space-xs ) )';
-	background-color: var( --color-surface-0 );
+	background-color: var( --color-surface-1 );
 	border-color: var( --border-color-base );
 	border-style: solid;
 	border-width: 0;
@@ -23,6 +26,7 @@
 	&__item {
 		display: flex;
 		align-items: center;
+		width: var( --header-button-size );
 	}
 
 	&__button {
@@ -75,11 +79,15 @@
 	&__logo {
 		padding: 0 var( --space-xs ) 0 0;
 		margin: 0 var( --space-xxs );
-		border: 0 solid var( --border-color-subtle );
-		border-right-width: var( --border-width-base );
+
+		.mw-logo {
+			width: var(--header-logo-size);
+			height: var(--header-logo-size);
+		}
 
 		img {
 			margin: auto;
+			width: 100%;
 		}
 
 		.citizen-ui-icon {
@@ -90,30 +98,9 @@
 
 	&__inner {
 		display: flex;
-		flex-grow: 1;
-		flex-direction: var( --header-direction );
-		gap: var( --space-xxs );
-		justify-content: space-between;
-		min-width: 0;
-		overflow-x: auto;
-	}
-
-	&__start,
-	&__end {
-		display: flex;
-		flex-shrink: 0; // let _inner handle the overflow
-		flex-direction: var( --header-direction );
-		gap: var( --space-xxs );
-
-		// Hide top-level menu header labels
-		> .citizen-menu > .citizen-menu__heading {
-			.mixin-citizen-screen-reader-only;
-		}
-	}
-
-	&__start {
-		align-items: center;
-		min-width: 0;
+		flex-direction: var( --header-icon-direction );
+		justify-content: center;
+		border-bottom: var( --border-subtle );
 	}
 
 	.citizen-dropdown {
@@ -164,7 +151,7 @@
 // This is dumb but hover:hover overrides active states
 @media ( hover: none ) {
 	.citizen-header {
-		&__button {
+		&__button {right
 			&:hover {
 				background-color: transparent;
 
@@ -190,11 +177,24 @@
 			padding: 0 0 var( --space-xs ) 0;
 			margin: var( --space-xxs ) 0;
 			border-right: 0;
-			border-bottom-width: var( --border-width-base );
 		}
 
 		.citizen-header-position-top & {
 			padding: var( --space-xs ) var( --space-xxl );
+		}
+
+		.citizen-header-position-top &__inner,
+		.citizen-header-position-top &__inner {
+			border-bottom: 0;
+			border-right: var( --border-subtle );
+		}
+	}
+}
+
+@media ( max-width: @max-width-breakpoint-tablet ) {
+	.citizen-header {
+		&__inner {
+			border: none;
 		}
 	}
 }

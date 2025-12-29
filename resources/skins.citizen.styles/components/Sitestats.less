@@ -1,25 +1,32 @@
 .citizen-siteStats {
-	--size-icon: 0.875rem;
+	--size-icon: 0.67rem;
 	display: flex;
+	flex-direction: var( --header-icon-direction );
 	gap: var( --space-md );
 	.mixin-citizen-font-styles( 'overline' );
 	white-space: nowrap;
+	width: 100%;
+	justify-content: center;
 
 	&__item {
 		display: flex;
+		justify-content: center;
 		gap: var( --space-xs );
 		align-items: center;
 	}
 
 	.citizen-ui-icon {
-		width: 0.875rem;
-		height: 0.875rem;
+		width: 0.67rem;
+		height: 0.67rem;
+	}
+
+	#citizen-siteStats__item--images { // i cant fit files in so lets just hide it
+		display: none;
 	}
 }
 
-// Can't display all in one line so let's hide file
-@media ( max-width: 480px ) {
-	#citizen-siteStats__item--images {
+@media ( max-width: @max-width-breakpoint-tablet ) {
+	.citizen-siteStats {
 		display: none;
 	}
 }

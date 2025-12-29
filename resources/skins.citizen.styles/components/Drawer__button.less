@@ -1,5 +1,5 @@
 // TODO: Use SVG animtation to replace CSS icons
-.citizen-drawer {
+#citizen-drawer-toggle {
 	.citizen-dropdown-summary {
 		> .citizen-ui-icon {
 			display: grid;
@@ -77,9 +77,17 @@
 
 // RTL
 .rtl {
-	.citizen-drawer .citizen-dropdown-summary:hover {
+	#citizen-drawer-toggle .citizen-dropdown-summary:hover {
 		> .citizen-ui-icon > span:first-child {
 			transform: translate3d( 50%, 0, 0 );
 		}
+	}
+}
+
+
+// hide on desktop
+@media ( min-width: @min-width-breakpoint-desktop ) {
+	#citizen-drawer-toggle {
+		display: none;
 	}
 }
