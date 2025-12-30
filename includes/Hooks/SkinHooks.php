@@ -37,12 +37,12 @@ class SkinHooks implements
 	 */
 	public function onBeforePageDisplay( $out, $skin ): void {
 		// It's better to exit before any additional check
-		if ( $skin->getSkinName() !== 'citizen' ) {
+		if ( $skin->getSkinName() !== 'wisdom' ) {
 			return;
 		}
 
-		if ( $this->getConfigValue( 'CitizenEnablePreferences', $out ) === true ) {
-			$script = file_get_contents( MW_INSTALL_PATH . '/skins/Citizen/resources/skins.wisdom.scripts/inline.js' );
+		if ( $this->getConfigValue( 'WisdomEnablePreferences', $out ) === true ) {
+			$script = file_get_contents( MW_INSTALL_PATH . '/skins/Wisdom/resources/skins.wisdom.scripts/inline.js' );
 			$script = Html::inlineScript( $script );
 			$script = RL\ResourceLoader::filter( 'minify-js', $script );
 			$out->addHeadItem( 'skin.citizen.inline', $script );
@@ -56,7 +56,7 @@ class SkinHooks implements
 	 * @param OutputPage $out
 	 */
 	public function onOutputPageAfterGetHeadLinksArray( &$tags, $out ): void {
-		if ( $out->getSkin()->getSkinName() !== 'citizen' ) {
+		if ( $out->getSkin()->getSkinName() !== 'wisdom' ) {
 			return;
 		}
 
@@ -88,7 +88,7 @@ class SkinHooks implements
 	 */
 	public function onSidebarBeforeOutput( $skin, &$sidebar ): void {
 		// Be extra safe because it might be active on other skins with caching
-		if ( $skin->getSkinName() !== 'citizen' ) {
+		if ( $skin->getSkinName() !== 'wisdom' ) {
 			return;
 		}
 
@@ -107,7 +107,7 @@ class SkinHooks implements
 	 */
 	public function onSkinBuildSidebar( $skin, &$bar ): void {
 		// Be extra safe because it might be active on other skins with caching
-		if ( $skin->getSkinName() !== 'citizen' ) {
+		if ( $skin->getSkinName() !== 'wisdom' ) {
 			return;
 		}
 
@@ -138,7 +138,7 @@ class SkinHooks implements
 
 	private function addSiteTools( Skin $skin, array &$bar ): void {
 		$out = $skin->getOutput();
-		$customSiteToolsMenuId = $this->getConfigValue( 'CitizenGlobalToolsPortlet', $out );
+		$customSiteToolsMenuId = $this->getConfigValue( 'WisdomGlobalToolsPortlet', $out );
 
 		$siteToolsMenuId = empty( $customSiteToolsMenuId )
 			? array_key_first( $bar )
@@ -182,7 +182,7 @@ class SkinHooks implements
 	 */
 	public function onSkinPageReadyConfig( $context, array &$config ): void {
 		// It's better to exit before any additional check
-		if ( $context->getSkin() !== 'citizen' ) {
+		if ( $context->getSkin() !== 'wisdom' ) {
 			return;
 		}
 
@@ -200,7 +200,7 @@ class SkinHooks implements
 	 */
 	public static function onSkinTemplateNavigation( $sktemplate, &$links ): void {
 		// Be extra safe because it might be active on other skins with caching
-		if ( $sktemplate->getSkinName() !== 'citizen' ) {
+		if ( $sktemplate->getSkinName() !== 'wisdom' ) {
 			return;
 		}
 
