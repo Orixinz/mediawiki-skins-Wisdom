@@ -25,11 +25,11 @@ class ResourceLoaderHooks {
 		Config $config
 	) {
 		return [
-			'wgCitizenEnablePreferences' => $config->get( 'CitizenEnablePreferences' ),
-			'wgCitizenOverflowInheritedClasses' => $config->get( 'CitizenOverflowInheritedClasses' ),
-			'wgCitizenOverflowNowrapClasses' => $config->get( 'CitizenOverflowNowrapClasses' ),
-			'wgCitizenSearchModule' => $config->get( 'CitizenSearchModule' ),
-			'wgCitizenEnableCommandPalette' => $config->get( 'CitizenEnableCommandPalette' ),
+			'wgCitizenEnablePreferences' => $config->get( 'WisdomEnablePreferences' ),
+			'wgCitizenOverflowInheritedClasses' => $config->get( 'WisdomOverflowInheritedClasses' ),
+			'wgCitizenOverflowNowrapClasses' => $config->get( 'WisdomOverflowNowrapClasses' ),
+			'wgCitizenSearchModule' => $config->get( 'WisdomSearchModule' ),
+			'wgCitizenEnableCommandPalette' => $config->get( 'WisdomEnableCommandPalette' ),
 		];
 	}
 
@@ -44,7 +44,7 @@ class ResourceLoaderHooks {
 		Config $config
 	) {
 		return [
-			'wgCitizenThemeDefault' => $config->get( 'CitizenThemeDefault' ),
+			'wgCitizenThemeDefault' => $config->get( 'WisdomThemeDefault' ),
 		];
 	}
 
@@ -63,9 +63,9 @@ class ResourceLoaderHooks {
 		return [
 			'isAdvancedSearchExtensionEnabled' => $extensionRegistry->isLoaded( 'AdvancedSearch' ),
 			'isMediaSearchExtensionEnabled' => $extensionRegistry->isLoaded( 'MediaSearch' ),
-			'wgCitizenSearchGateway' => $config->get( 'CitizenSearchGateway' ),
-			'wgCitizenSearchDescriptionSource' => $config->get( 'CitizenSearchDescriptionSource' ),
-			'wgCitizenMaxSearchResults' => $config->get( 'CitizenMaxSearchResults' ),
+			'wgCitizenSearchGateway' => $config->get( 'WisdomSearchGateway' ),
+			'wgCitizenSearchDescriptionSource' => $config->get( 'WisdomSearchDescriptionSource' ),
+			'wgCitizenMaxSearchResults' => $config->get( 'WisdomMaxSearchResults' ),
 			'wgScriptPath' => $config->get( MainConfigNames::ScriptPath ),
 			'wgSearchSuggestCacheExpiry' => $config->get( MainConfigNames::SearchSuggestCacheExpiry )
 		];

@@ -244,7 +244,7 @@ class SkinCitizen extends SkinMustache {
 	 */
 	private function shouldMakeSections( Title $title ): bool {
 		if (
-			$this->getConfig()->get( 'CitizenEnableCollapsibleSections' ) === false ||
+			$this->getConfig()->get( 'WisdomEnableCollapsibleSections' ) === false ||
 			!$title->canExist() ||
 			$title->isMainPage() ||
 			!$title->isContentPage() ||
@@ -303,7 +303,7 @@ class SkinCitizen extends SkinMustache {
 		if ( $title !== null ) {
 			// Collapsible sections
 			if (
-				$config->get( 'CitizenEnableCollapsibleSections' ) === true &&
+				$config->get( 'WisdomEnableCollapsibleSections' ) === true &&
 				$title->isContentPage()
 			) {
 				$options['bodyClasses'][] = 'citizen-sections-enabled';
@@ -311,17 +311,17 @@ class SkinCitizen extends SkinMustache {
 		}
 
 		// CJK fonts
-		if ( $config->get( 'CitizenEnableCJKFonts' ) === true ) {
+		if ( $config->get( 'WisdomEnableCJKFonts' ) === true ) {
 			$options['styles'][] = 'skins.citizen.styles.fonts.cjk';
 		}
 
 		// AR fonts
-		if ( $config->get( 'CitizenEnableARFonts' ) === true ) {
+		if ( $config->get( 'WisdomEnableARFonts' ) === true ) {
 			$options['styles'][] = 'skins.citizen.styles.fonts.ar';
 		}
 
 		// Header position
-		$headerPosition = $config->get( 'CitizenHeaderPosition' );
+		$headerPosition = $config->get( 'WisdomHeaderPosition' );
 
 		if ( !in_array( $headerPosition, [ 'left', 'right', 'top', 'bottom' ] ) ) {
 			$headerPosition = 'left';

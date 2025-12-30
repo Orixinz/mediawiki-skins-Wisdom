@@ -165,7 +165,7 @@
 				"resources/skins.citizen.scripts/tableOfContents.js",
 				{
 					"name": "resources/skins.citizen.scripts/tableOfContentsConfig.json",
-					"config": ["CitizenTableOfContentsCollapseAtCount"]
+					"config": ["WisdomTableOfContentsCollapseAtCount"]
 				},
 				{
 					"name": "resources/skins.citizen.scripts/templates/TableOfContents__list.mustache",
@@ -732,7 +732,7 @@
 			"+jquery.ui": "skinStyles/jquery/ui.less"
 		}
 	},
-	"config_prefix": "wgCitizen",
+	"config_prefix": "wgWisdom",
 	"config": {
 		"ThemeDefault": {
 			"value": "auto",

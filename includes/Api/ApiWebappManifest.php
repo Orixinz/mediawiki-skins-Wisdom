@@ -40,7 +40,7 @@ class ApiWebappManifest extends ApiBase {
 	) {
 		parent::__construct( $main, $moduleName );
 		$this->config = $this->getConfig();
-		$this->options = $this->config->get( 'CitizenManifestOptions' );
+		$this->options = $this->config->get( 'WisdomManifestOptions' );
 	}
 
 	/**

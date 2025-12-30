@@ -103,7 +103,7 @@ class CitizenComponentSiteStats implements CitizenComponent {
 	}
 
 	public function getTemplateData(): array {
-		if ( !$this->config->get( 'CitizenEnableDrawerSiteStats' ) ) {
+		if ( !$this->config->get( 'WisdomEnableDrawerSiteStats' ) ) {
 			return [];
 		}
 

@@ -44,7 +44,7 @@ class CitizenComponentPageTools implements CitizenComponent {
 	 *   e.g. permission-edit = only visible if user can edit pages
 	 */
 	private function shouldShowPageTools(): bool {
-		$condition = $this->config->get( 'CitizenShowPageTools' );
+		$condition = $this->config->get( 'WisdomShowPageTools' );
 		$user = $this->user;
 
 		// Login-based condition, return true if condition is met
