@@ -2,7 +2,7 @@
 
 declare( strict_types=1 );
 
-namespace MediaWiki\Skins\Citizen\Components;
+namespace MediaWiki\Skins\Wisdom\Components;
 
 use MediaWiki\Registration\ExtensionRegistry;
 use MediaWiki\Skin\SkinComponentUtils;

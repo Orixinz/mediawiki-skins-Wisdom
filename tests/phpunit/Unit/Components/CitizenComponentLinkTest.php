@@ -2,9 +2,9 @@
 
 declare( strict_types=1 );
 
-namespace MediaWiki\Skins\Citizen\Tests\Unit\Components;
+namespace MediaWiki\Skins\Wisdom\Tests\Unit\Components;
 
-use MediaWiki\Skins\Citizen\Components\CitizenComponentLink;
+use MediaWiki\Skins\Wisdom\Components\CitizenComponentLink;
 use MediaWikiUnitTestCase;
 use Message;
 use MessageLocalizer;
@@ -12,7 +12,7 @@ use MessageLocalizer;
 /**
  * @group Citizen
  * @group Components
- * @coversDefaultClass \MediaWiki\Skins\Citizen\Components\CitizenComponentLink
+ * @coversDefaultClass \MediaWiki\Skins\Wisdom\Components\CitizenComponentLink
  */
 class CitizenComponentLinkTest extends MediaWikiUnitTestCase {
 

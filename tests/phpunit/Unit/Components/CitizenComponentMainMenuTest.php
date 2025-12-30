@@ -2,16 +2,16 @@
 
 declare( strict_types=1 );
 
-namespace MediaWiki\Skins\Citizen\Tests\Unit\Components;
+namespace MediaWiki\Skins\Wisdom\Tests\Unit\Components;
 
-use MediaWiki\Skins\Citizen\Components\CitizenComponent;
-use MediaWiki\Skins\Citizen\Components\CitizenComponentMainMenu;
+use MediaWiki\Skins\Wisdom\Components\CitizenComponent;
+use MediaWiki\Skins\Wisdom\Components\CitizenComponentMainMenu;
 use MediaWikiUnitTestCase;
 
 /**
  * @group Citizen
  * @group Components
- * @coversDefaultClass \MediaWiki\Skins\Citizen\Components\CitizenComponentMainMenu
+ * @coversDefaultClass \MediaWiki\Skins\Wisdom\Components\CitizenComponentMainMenu
  */
 class CitizenComponentMainMenuTest extends MediaWikiUnitTestCase {
 

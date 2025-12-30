@@ -2,7 +2,7 @@
 
 declare( strict_types=1 );
 
-namespace MediaWiki\Skins\Citizen\Hooks;
+namespace MediaWiki\Skins\Wisdom\Hooks;
 
 use MediaWiki\Config\Config;
 use MediaWiki\MainConfigNames;

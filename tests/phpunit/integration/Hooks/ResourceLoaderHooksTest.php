@@ -2,11 +2,11 @@
 
 declare( strict_types=1 );
 
-namespace MediaWiki\Skins\Citizen\Tests\Integration\Hooks;
+namespace MediaWiki\Skins\Wisdom\Tests\Integration\Hooks;
 
 use MediaWiki\MainConfigNames;
 use MediaWiki\ResourceLoader\Context;
-use MediaWiki\Skins\Citizen\Hooks\ResourceLoaderHooks;
+use MediaWiki\Skins\Wisdom\Hooks\ResourceLoaderHooks;
 use MediaWikiIntegrationTestCase;
 
 /**
@@ -14,7 +14,7 @@ use MediaWikiIntegrationTestCase;
  */
 class ResourceLoaderHooksTest extends MediaWikiIntegrationTestCase {
 	/**
-	 * @covers \MediaWiki\Skins\Citizen\Hooks\ResourceLoaderHooks
+	 * @covers \MediaWiki\Skins\Wisdom\Hooks\ResourceLoaderHooks
 	 * @return void
 	 */
 	public function testCitizenResourceLoaderConfig() {
@@ -43,7 +43,7 @@ class ResourceLoaderHooksTest extends MediaWikiIntegrationTestCase {
 	}
 
 	/**
-	 * @covers \MediaWiki\Skins\Citizen\Hooks\ResourceLoaderHooks
+	 * @covers \MediaWiki\Skins\Wisdom\Hooks\ResourceLoaderHooks
 	 * @return void
 	 */
 	public function testCitizenPreferencesResourceLoaderConfig() {
@@ -64,7 +64,7 @@ class ResourceLoaderHooksTest extends MediaWikiIntegrationTestCase {
 	}
 
 	/**
-	 * @covers \MediaWiki\Skins\Citizen\Hooks\ResourceLoaderHooks
+	 * @covers \MediaWiki\Skins\Wisdom\Hooks\ResourceLoaderHooks
 	 * @return void
 	 */
 	public function testCitizenSearchResourceLoaderConfig() {

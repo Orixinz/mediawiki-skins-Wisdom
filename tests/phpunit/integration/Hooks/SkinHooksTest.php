@@ -2,7 +2,7 @@
 
 declare( strict_types=1 );
 
-namespace MediaWiki\Skins\Citizen\Tests\Integration\Hooks;
+namespace MediaWiki\Skins\Wisdom\Tests\Integration\Hooks;
 
 use MediaWikiIntegrationTestCase;
 

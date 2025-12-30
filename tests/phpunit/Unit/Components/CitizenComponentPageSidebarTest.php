@@ -2,9 +2,9 @@
 
 declare( strict_types=1 );
 
-namespace MediaWiki\Skins\Citizen\Tests\Components;
+namespace MediaWiki\Skins\Wisdom\Tests\Components;
 
-use MediaWiki\Skins\Citizen\Components\CitizenComponentPageSidebar;
+use MediaWiki\Skins\Wisdom\Components\CitizenComponentPageSidebar;
 use MediaWiki\Title\Title;
 use MediaWikiUnitTestCase;
 use MessageLocalizer;
@@ -13,7 +13,7 @@ use PHPUnit\Framework\MockObject\MockObject;
 /**
  * @group Citizen
  * @group Components
- * @coversDefaultClass \MediaWiki\Skins\Citizen\Components\CitizenComponentPageSidebar
+ * @coversDefaultClass \MediaWiki\Skins\Wisdom\Components\CitizenComponentPageSidebar
  */
 class CitizenComponentPageSidebarTest extends MediaWikiUnitTestCase {
 

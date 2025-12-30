@@ -2,17 +2,17 @@
 
 declare( strict_types=1 );
 
-namespace MediaWiki\Skins\Citizen\Partials;
+namespace MediaWiki\Skins\Wisdom\Partials;
 
 use Exception;
 use MediaWiki\MainConfigNames;
-use MediaWiki\Skins\Citizen\SkinCitizen;
+use MediaWiki\Skins\Wisdom\SkinWisdom;
 use MediaWiki\Utils\UrlUtils;
 
 final class Metadata extends Partial {
 
 	public function __construct(
-		SkinCitizen $skin,
+		SkinWisdom $skin,
 		private readonly UrlUtils $urlUtils
 	) {
 		parent::__construct( $skin );

@@ -20,7 +20,7 @@
 	},
 	"ValidSkinNames": {
 		"wisdom": {
-			"class": "MediaWiki\\Skins\\Citizen\\SkinCitizen",
+			"class": "MediaWiki\\Skins\\Wisdom\\SkinWisdom",
 			"services": [
 				"UserFactory",
 				"GenderCache",
@@ -86,21 +86,21 @@
 		"Wisdom": ["i18n"]
 	},
 	"AutoloadNamespaces": {
-		"MediaWiki\\Skins\\Citizen\\": "includes/"
+		"MediaWiki\\Skins\\Wisdom\\": "includes/"
 	},
 	"TestAutoloadNamespaces": {
-		"MediaWiki\\Skins\\Citizen\\": "includes/",
-		"MediaWiki\\Skins\\Citizen\\Tests\\": "tests/phpunit/"
+		"MediaWiki\\Skins\\Wisdom\\": "includes/",
+		"MediaWiki\\Skins\\Wisdom\\Tests\\": "tests/phpunit/"
 	},
 	"APIModules": {
 		"appmanifest": {
-			"class": "MediaWiki\\Skins\\Citizen\\Api\\ApiWebappManifest",
+			"class": "MediaWiki\\Skins\\Wisdom\\Api\\ApiWebappManifest",
 			"services": ["ContentLanguage", "HttpRequestFactory", "UrlUtils"]
 		}
 	},
 	"HookHandlers": {
 		"SkinHooks": {
-			"class": "MediaWiki\\Skins\\Citizen\\Hooks\\SkinHooks"
+			"class": "MediaWiki\\Skins\\Wisdom\\Hooks\\SkinHooks"
 		}
 	},
 	"Hooks": {
@@ -143,7 +143,7 @@
 				"resources/skins.wisdom.scripts/skin.js",
 				{
 					"name": "resources/skins.wisdom.scripts/config.json",
-					"callback": "MediaWiki\\Skins\\Citizen\\Hooks\\ResourceLoaderHooks::getCitizenResourceLoaderConfig"
+					"callback": "MediaWiki\\Skins\\Wisdom\\Hooks\\ResourceLoaderHooks::getCitizenResourceLoaderConfig"
 				},
 				"resources/skins.wisdom.scripts/contentEnhancements.js",
 				"resources/skins.wisdom.scripts/deferUntilFrame.js",
@@ -197,7 +197,7 @@
 				"resources/skins.wisdom.search/main.js",
 				{
 					"name": "resources/skins.wisdom.search/config.json",
-					"callback": "MediaWiki\\Skins\\Citizen\\Hooks\\ResourceLoaderHooks::getCitizenSearchResourceLoaderConfig"
+					"callback": "MediaWiki\\Skins\\Wisdom\\Hooks\\ResourceLoaderHooks::getCitizenSearchResourceLoaderConfig"
 				},
 				"resources/skins.wisdom.search/typeahead.js",
 				{
@@ -259,7 +259,7 @@
 				"resources/skins.wisdom.preferences/skins.wisdom.preferences.js",
 				{
 					"name": "resources/skins.wisdom.preferences/config.json",
-					"callback": "MediaWiki\\Skins\\Citizen\\Hooks\\ResourceLoaderHooks::getCitizenPreferencesResourceLoaderConfig"
+					"callback": "MediaWiki\\Skins\\Wisdom\\Hooks\\ResourceLoaderHooks::getCitizenPreferencesResourceLoaderConfig"
 				},
 				"resources/skins.wisdom.preferences/addPortlet.polyfill.js",
 				"resources/skins.wisdom.preferences/clientPreferences.js",
@@ -364,7 +364,7 @@
 				},
 				{
 					"name": "resources/skins.wisdom.commandPalette/config.json",
-					"callback": "MediaWiki\\Skins\\Citizen\\Hooks\\ResourceLoaderHooks::getCitizenCommandPaletteResourceLoaderConfig"
+					"callback": "MediaWiki\\Skins\\Wisdom\\Hooks\\ResourceLoaderHooks::getCitizenCommandPaletteResourceLoaderConfig"
 				}
 			],
 			"messages": [

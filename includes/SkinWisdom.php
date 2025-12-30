@@ -2,26 +2,26 @@
 
 declare( strict_types=1 );
 
-namespace MediaWiki\Skins\Citizen;
+namespace MediaWiki\Skins\Wisdom;
 
 use MediaWiki\Cache\GenderCache;
 use MediaWiki\Languages\LanguageConverterFactory;
 use MediaWiki\Languages\LanguageNameUtils;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Registration\ExtensionRegistry;
-use MediaWiki\Skins\Citizen\Components\CitizenComponentBodyContent;
-use MediaWiki\Skins\Citizen\Components\CitizenComponentFooter;
-use MediaWiki\Skins\Citizen\Components\CitizenComponentMainMenu;
-use MediaWiki\Skins\Citizen\Components\CitizenComponentPageFooter;
-use MediaWiki\Skins\Citizen\Components\CitizenComponentPageHeading;
-use MediaWiki\Skins\Citizen\Components\CitizenComponentPageSidebar;
-use MediaWiki\Skins\Citizen\Components\CitizenComponentPageTools;
-use MediaWiki\Skins\Citizen\Components\CitizenComponentSearchBox;
-use MediaWiki\Skins\Citizen\Components\CitizenComponentSiteStats;
-use MediaWiki\Skins\Citizen\Components\CitizenComponentStickyHeader;
-use MediaWiki\Skins\Citizen\Components\CitizenComponentUserInfo;
-use MediaWiki\Skins\Citizen\Partials\Metadata;
-use MediaWiki\Skins\Citizen\Partials\Theme;
+use MediaWiki\Skins\Wisdom\Components\CitizenComponentBodyContent;
+use MediaWiki\Skins\Wisdom\Components\CitizenComponentFooter;
+use MediaWiki\Skins\Wisdom\Components\CitizenComponentMainMenu;
+use MediaWiki\Skins\Wisdom\Components\CitizenComponentPageFooter;
+use MediaWiki\Skins\Wisdom\Components\CitizenComponentPageHeading;
+use MediaWiki\Skins\Wisdom\Components\CitizenComponentPageSidebar;
+use MediaWiki\Skins\Wisdom\Components\CitizenComponentPageTools;
+use MediaWiki\Skins\Wisdom\Components\CitizenComponentSearchBox;
+use MediaWiki\Skins\Wisdom\Components\CitizenComponentSiteStats;
+use MediaWiki\Skins\Wisdom\Components\CitizenComponentStickyHeader;
+use MediaWiki\Skins\Wisdom\Components\CitizenComponentUserInfo;
+use MediaWiki\Skins\Wisdom\Partials\Metadata;
+use MediaWiki\Skins\Wisdom\Partials\Theme;
 use MediaWiki\Title\Title;
 use MediaWiki\User\UserFactory;
 use MediaWiki\User\UserGroupManager;
@@ -35,7 +35,7 @@ use SkinTemplate;
  * Skin subclass for Citizen
  * @ingroup Skins
  */
-class SkinCitizen extends SkinMustache {
+class SkinWisdom extends SkinMustache {
 
 	/** For caching purposes */
 	private ?array $languages = null;

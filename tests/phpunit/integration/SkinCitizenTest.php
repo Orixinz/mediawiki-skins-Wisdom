@@ -2,10 +2,10 @@
 
 declare( strict_types=1 );
 
-namespace MediaWiki\Skins\Citizen\Integration\Tests;
+namespace MediaWiki\Skins\Wisdom\Integration\Tests;
 
 use Exception;
-use MediaWiki\Skins\Citizen\SkinCitizen;
+use MediaWiki\Skins\Wisdom\SkinWisdom;
 use MediaWiki\Title\Title;
 use MediaWikiIntegrationTestCase;
 use RequestContext;
@@ -17,10 +17,10 @@ use RequestContext;
 class SkinCitizenTest extends MediaWikiIntegrationTestCase {
 
 	/**
-	 * @return SkinCitizen
+	 * @return SkinWisdom
 	 */
 	private function createSkinInstance() {
-		return new SkinCitizen(
+		return new SkinWisdom(
 			$this->getServiceContainer()->getUserFactory(),
 			$this->getServiceContainer()->getGenderCache(),
 			$this->getServiceContainer()->getUserIdentityLookup(),
@@ -38,20 +38,20 @@ class SkinCitizenTest extends MediaWikiIntegrationTestCase {
 	}
 
 	/**
-	 * @covers \MediaWiki\Skins\Citizen\SkinCitizen
+	 * @covers \MediaWiki\Skins\Wisdom\SkinWisdom
 	 * @return void
 	 */
 	public function testConstructor() {
 		$skin = $this->createSkinInstance();
 
-		$this->assertInstanceOf( SkinCitizen::class, $skin );
+		$this->assertInstanceOf( SkinWisdom::class, $skin );
 	}
 
 	/**
-	 * @covers \MediaWiki\Skins\Citizen\SkinCitizen
-	 * @covers \MediaWiki\Skins\Citizen\SkinCitizen::buildSkinFeatures
-	 * @covers \MediaWiki\Skins\Citizen\Partials\Metadata
-	 * @covers \MediaWiki\Skins\Citizen\Partials\Theme
+	 * @covers \MediaWiki\Skins\Wisdom\SkinWisdom
+	 * @covers \MediaWiki\Skins\Wisdom\SkinWisdom::buildSkinFeatures
+	 * @covers \MediaWiki\Skins\Wisdom\Partials\Metadata
+	 * @covers \MediaWiki\Skins\Wisdom\Partials\Theme
 	 * @return void
 	 * @throws Exception
 	 */
@@ -77,10 +77,10 @@ class SkinCitizenTest extends MediaWikiIntegrationTestCase {
 	}
 
 	/**
-	 * @covers \MediaWiki\Skins\Citizen\SkinCitizen
-	 * @covers \MediaWiki\Skins\Citizen\SkinCitizen::buildSkinFeatures
-	 * @covers \MediaWiki\Skins\Citizen\Partials\Metadata
-	 * @covers \MediaWiki\Skins\Citizen\Partials\Theme
+	 * @covers \MediaWiki\Skins\Wisdom\SkinWisdom
+	 * @covers \MediaWiki\Skins\Wisdom\SkinWisdom::buildSkinFeatures
+	 * @covers \MediaWiki\Skins\Wisdom\Partials\Metadata
+	 * @covers \MediaWiki\Skins\Wisdom\Partials\Theme
 	 * @return void
 	 * @throws Exception
 	 */
@@ -95,8 +95,8 @@ class SkinCitizenTest extends MediaWikiIntegrationTestCase {
 	}
 
 	/**
-	 * @covers \MediaWiki\Skins\Citizen\SkinCitizen
-	 * @covers \MediaWiki\Skins\Citizen\SkinCitizen::buildSkinFeatures
+	 * @covers \MediaWiki\Skins\Wisdom\SkinWisdom
+	 * @covers \MediaWiki\Skins\Wisdom\SkinWisdom::buildSkinFeatures
 	 * @return void
 	 * @throws Exception
 	 */
@@ -112,8 +112,8 @@ class SkinCitizenTest extends MediaWikiIntegrationTestCase {
 	}
 
 	/**
-	 * @covers \MediaWiki\Skins\Citizen\SkinCitizen
-	 * @covers \MediaWiki\Skins\Citizen\SkinCitizen::buildSkinFeatures
+	 * @covers \MediaWiki\Skins\Wisdom\SkinWisdom
+	 * @covers \MediaWiki\Skins\Wisdom\SkinWisdom::buildSkinFeatures
 	 * @return void
 	 * @throws Exception
 	 */

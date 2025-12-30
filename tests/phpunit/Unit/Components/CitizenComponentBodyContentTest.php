@@ -2,13 +2,13 @@
 
 declare( strict_types=1 );
 
-namespace MediaWiki\Skins\Citizen\Tests\Components;
+namespace MediaWiki\Skins\Wisdom\Tests\Components;
 
-use MediaWiki\Skins\Citizen\Components\CitizenComponentBodyContent;
+use MediaWiki\Skins\Wisdom\Components\CitizenComponentBodyContent;
 use MediaWikiIntegrationTestCase;
 
 /**
- * @coversDefaultClass \MediaWiki\Skins\Citizen\Components\CitizenComponentBodyContent
+ * @coversDefaultClass \MediaWiki\Skins\Wisdom\Components\CitizenComponentBodyContent
  * @group Citizen
  */
 class CitizenComponentBodyContentTest extends MediaWikiIntegrationTestCase {

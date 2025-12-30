@@ -2,7 +2,7 @@
 
 declare( strict_types=1 );
 
-namespace MediaWiki\Skins\Citizen\Api;
+namespace MediaWiki\Skins\Wisdom\Api;
 
 use Exception;
 use MediaWiki\Api\ApiBase;

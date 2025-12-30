@@ -2,7 +2,7 @@
 
 declare( strict_types=1 );
 
-namespace MediaWiki\Skins\Citizen\Partials;
+namespace MediaWiki\Skins\Wisdom\Partials;
 
 const CLIENTPREFS_THEME_MAP = [
 	'auto' => 'os',

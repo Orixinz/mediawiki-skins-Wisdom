@@ -2,15 +2,15 @@
 
 declare( strict_types=1 );
 
-namespace MediaWiki\Skins\Citizen\Tests\Unit\Components;
+namespace MediaWiki\Skins\Wisdom\Tests\Unit\Components;
 
-use MediaWiki\Skins\Citizen\Components\CitizenComponentStickyHeader;
+use MediaWiki\Skins\Wisdom\Components\CitizenComponentStickyHeader;
 use MediaWikiUnitTestCase;
 
 /**
  * @group Citizen
  * @group Components
- * @coversDefaultClass \MediaWiki\Skins\Citizen\Components\CitizenComponentStickyHeader
+ * @coversDefaultClass \MediaWiki\Skins\Wisdom\Components\CitizenComponentStickyHeader
  */
 class CitizenComponentStickyHeaderTest extends MediaWikiUnitTestCase {
 

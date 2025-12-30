@@ -2,7 +2,7 @@
 
 declare( strict_types=1 );
 
-namespace MediaWiki\Skins\Citizen;
+namespace MediaWiki\Skins\Wisdom;
 
 use MediaWiki\Config\ConfigException;
 use MediaWiki\Output\OutputPage;

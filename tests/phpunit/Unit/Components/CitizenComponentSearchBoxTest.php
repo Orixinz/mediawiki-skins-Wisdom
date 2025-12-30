@@ -2,7 +2,7 @@
 
 declare( strict_types=1 );
 
-namespace MediaWiki\Skins\Citizen\Tests\Components;
+namespace MediaWiki\Skins\Wisdom\Tests\Components;
 
 use MediaWikiUnitTestCase;
 use Message;
@@ -11,7 +11,7 @@ use MessageLocalizer;
 /**
  * @group Citizen
  * @group Components
- * @coversDefaultClass \MediaWiki\Skins\Citizen\Components\CitizenComponentSearchBox
+ * @coversDefaultClass \MediaWiki\Skins\Wisdom\Components\CitizenComponentSearchBox
  */
 class CitizenComponentSearchBoxTest extends MediaWikiUnitTestCase {
 

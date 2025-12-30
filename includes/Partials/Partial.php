@@ -2,11 +2,11 @@
 
 declare( strict_types=1 );
 
-namespace MediaWiki\Skins\Citizen\Partials;
+namespace MediaWiki\Skins\Wisdom\Partials;
 
 use MediaWiki\Output\OutputPage;
-use MediaWiki\Skins\Citizen\GetConfigTrait;
-use MediaWiki\Skins\Citizen\SkinCitizen;
+use MediaWiki\Skins\Wisdom\GetConfigTrait;
+use MediaWiki\Skins\Wisdom\SkinWisdom;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
 
@@ -25,7 +25,7 @@ abstract class Partial {
 	protected User $user;
 
 	public function __construct(
-		protected readonly SkinCitizen $skin
+		protected readonly SkinWisdom $skin
 	) {
 		$this->out = $skin->getOutput();
 		$this->title = $this->out->getTitle();

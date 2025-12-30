@@ -2,7 +2,7 @@
 
 declare( strict_types=1 );
 
-namespace MediaWiki\Skins\Citizen\Components;
+namespace MediaWiki\Skins\Wisdom\Components;
 
 use MediaWiki\Cache\GenderCache;
 use MediaWiki\Html\Html;

@@ -1,7 +1,7 @@
 <?php
 declare( strict_types=1 );
 
-namespace MediaWiki\Skins\Citizen\Hooks;
+namespace MediaWiki\Skins\Wisdom\Hooks;
 
 use MediaWiki\Hook\SidebarBeforeOutputHook;
 use MediaWiki\Hook\SkinBuildSidebarHook;
@@ -12,7 +12,7 @@ use MediaWiki\Output\OutputPage;
 use MediaWiki\Registration\ExtensionRegistry;
 use MediaWiki\ResourceLoader as RL;
 use MediaWiki\Skin\SkinComponentUtils;
-use MediaWiki\Skins\Citizen\GetConfigTrait;
+use MediaWiki\Skins\Wisdom\GetConfigTrait;
 use MediaWiki\Skins\Hook\SkinPageReadyConfigHook;
 use Skin;
 use SkinTemplate;

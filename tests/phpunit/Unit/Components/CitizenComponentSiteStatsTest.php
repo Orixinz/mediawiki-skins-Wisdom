@@ -2,14 +2,14 @@
 
 declare( strict_types=1 );
 
-namespace MediaWiki\Skins\Citizen\Tests\Components;
+namespace MediaWiki\Skins\Wisdom\Tests\Components;
 
 use MediaWikiUnitTestCase;
 
 /**
  * @group Citizen
  * @group Components
- * @coversDefaultClass \MediaWiki\Skins\Citizen\Components\CitizenComponentSiteStats
+ * @coversDefaultClass \MediaWiki\Skins\Wisdom\Components\CitizenComponentSiteStats
  */
 class CitizenComponentSiteStatsTest extends MediaWikiUnitTestCase {
 	/**

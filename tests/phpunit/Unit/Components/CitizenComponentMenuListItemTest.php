@@ -2,17 +2,17 @@
 
 declare( strict_types=1 );
 
-namespace MediaWiki\Skins\Citizen\Tests\Components;
+namespace MediaWiki\Skins\Wisdom\Tests\Components;
 
-use MediaWiki\Skins\Citizen\Components\CitizenComponentLink;
-use MediaWiki\Skins\Citizen\Components\CitizenComponentMenuListItem;
+use MediaWiki\Skins\Wisdom\Components\CitizenComponentLink;
+use MediaWiki\Skins\Wisdom\Components\CitizenComponentMenuListItem;
 use MediaWikiUnitTestCase;
 use PHPUnit\Framework\MockObject\MockObject;
 
 /**
  * @group Citizen
  * @group Components
- * @coversDefaultClass \MediaWiki\Skins\Citizen\Components\CitizenComponentMenuListItem
+ * @coversDefaultClass \MediaWiki\Skins\Wisdom\Components\CitizenComponentMenuListItem
  */
 class CitizenComponentMenuListItemTest extends MediaWikiUnitTestCase {
 

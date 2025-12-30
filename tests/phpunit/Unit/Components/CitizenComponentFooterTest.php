@@ -2,9 +2,9 @@
 
 declare( strict_types=1 );
 
-namespace MediaWiki\Skins\Citizen\Tests\Components;
+namespace MediaWiki\Skins\Wisdom\Tests\Components;
 
-use MediaWiki\Skins\Citizen\Components\CitizenComponentFooter;
+use MediaWiki\Skins\Wisdom\Components\CitizenComponentFooter;
 use MediaWikiUnitTestCase;
 use Message;
 use MessageLocalizer;
@@ -12,7 +12,7 @@ use MessageLocalizer;
 /**
  * @group Citizen
  * @group Components
- * @coversDefaultClass \MediaWiki\Skins\Citizen\Components\CitizenComponentFooter
+ * @coversDefaultClass \MediaWiki\Skins\Wisdom\Components\CitizenComponentFooter
  */
 class CitizenComponentFooterTest extends MediaWikiUnitTestCase {
 
