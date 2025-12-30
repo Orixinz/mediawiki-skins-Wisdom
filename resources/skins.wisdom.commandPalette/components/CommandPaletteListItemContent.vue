@@ -70,7 +70,7 @@
 
 <script>
 const { defineComponent } = require( 'vue' );
-const { CdxIcon, CdxSearchResultTitle, CdxThumbnail } = mw.loader.require( 'skins.citizen.commandPalette.codex' );
+const { CdxIcon, CdxSearchResultTitle, CdxThumbnail } = mw.loader.require( 'skins.wisdom.commandPalette.codex' );
 
 // @vue/component
 module.exports = exports = defineComponent( {

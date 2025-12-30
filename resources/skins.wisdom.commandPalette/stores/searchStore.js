@@ -138,7 +138,7 @@ exports.useSearchStore = defineStore( 'search', {
 					this.setProviderResults( results );
 				}
 			} catch ( error ) {
-				mw.log.error( `[skins.citizen.commandPalette] Sync Provider failed for query "${ query }":`, error );
+				mw.log.error( `[skins.wisdom.commandPalette] Sync Provider failed for query "${ query }":`, error );
 				if ( this.searchQuery === query ) {
 					this.setProviderResults( [] );
 				}
@@ -177,7 +177,7 @@ exports.useSearchStore = defineStore( 'search', {
 						this.setProviderResults( results );
 					}
 				} catch ( error ) {
-					mw.log.error( `[skins.citizen.commandPalette] Async Provider failed for query "${ query }":`, error );
+					mw.log.error( `[skins.wisdom.commandPalette] Async Provider failed for query "${ query }":`, error );
 					if ( this.searchQuery === query ) {
 						this.setProviderResults( [] );
 					}
@@ -247,7 +247,7 @@ exports.useSearchStore = defineStore( 'search', {
 				// Source is now added by the provider
 				return Array.isArray( articles ) ? articles : [];
 			} catch ( error ) {
-				mw.log.error( '[skins.citizen.commandPalette] Failed to get related articles:', error );
+				mw.log.error( '[skins.wisdom.commandPalette] Failed to get related articles:', error );
 				return [];
 			}
 		},
@@ -266,7 +266,7 @@ exports.useSearchStore = defineStore( 'search', {
 				// Source is now added by the provider
 				return Array.isArray( items ) ? items : [];
 			} catch ( error ) {
-				mw.log.error( '[skins.citizen.commandPalette] Failed to get recent items:', error );
+				mw.log.error( '[skins.wisdom.commandPalette] Failed to get recent items:', error );
 				return [];
 			}
 		},
@@ -320,7 +320,7 @@ exports.useSearchStore = defineStore( 'search', {
 					const actionResult = await sourceProvider.onResultSelect( result );
 					return this.processProviderAction( actionResult, result );
 				} catch ( error ) {
-					mw.log.error( `[skins.citizen.commandPalette|searchStore] Error handling selection for source: ${ result.source }`, error );
+					mw.log.error( `[skins.wisdom.commandPalette|searchStore] Error handling selection for source: ${ result.source }`, error );
 					return { action: 'none' };
 				}
 			} else {
@@ -365,7 +365,7 @@ exports.useSearchStore = defineStore( 'search', {
 		 * @return {CommandPaletteActionResult} An object describing the next UI action.
 		 */
 		handleFallbackSelection( result ) {
-			mw.log.warn( `[skins.citizen.commandPalette|searchStore] No provider or onResultSelect found for source: ${ result.source }`, result );
+			mw.log.warn( `[skins.wisdom.commandPalette|searchStore] No provider or onResultSelect found for source: ${ result.source }`, result );
 			const actionResult = getNavigationAction( result );
 			// Process the fallback action (e.g., to save recent item)
 			return this.processProviderAction( actionResult, result );

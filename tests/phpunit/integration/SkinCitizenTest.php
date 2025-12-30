@@ -108,7 +108,7 @@ class SkinCitizenTest extends MediaWikiIntegrationTestCase {
 		$skin = $this->createSkinInstance();
 
 		$this->assertArrayHasKey( 'styles', $skin->getOptions() );
-		$this->assertContains( 'skins.citizen.styles.fonts.cjk', $skin->getOptions()['styles'] );
+		$this->assertContains( 'skins.wisdom.styles.fonts.cjk', $skin->getOptions()['styles'] );
 	}
 
 	/**

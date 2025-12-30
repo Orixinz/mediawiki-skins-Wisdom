@@ -42,7 +42,7 @@ class SkinHooks implements
 		}
 
 		if ( $this->getConfigValue( 'CitizenEnablePreferences', $out ) === true ) {
-			$script = file_get_contents( MW_INSTALL_PATH . '/skins/Citizen/resources/skins.citizen.scripts/inline.js' );
+			$script = file_get_contents( MW_INSTALL_PATH . '/skins/Citizen/resources/skins.wisdom.scripts/inline.js' );
 			$script = Html::inlineScript( $script );
 			$script = RL\ResourceLoader::filter( 'minify-js', $script );
 			$out->addHeadItem( 'skin.citizen.inline', $script );

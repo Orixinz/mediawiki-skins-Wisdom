@@ -15,7 +15,7 @@ use MediaWiki\ResourceLoader as RL;
 class ResourceLoaderHooks {
 
 	/**
-	 * Passes config variables to skins.citizen.scripts ResourceLoader module.
+	 * Passes config variables to skins.wisdom.scripts ResourceLoader module.
 	 * @param RL\Context $context
 	 * @param Config $config
 	 * @return array
@@ -34,7 +34,7 @@ class ResourceLoaderHooks {
 	}
 
 	/**
-	 * Passes config variables to skins.citizen.preferences ResourceLoader module.
+	 * Passes config variables to skins.wisdom.preferences ResourceLoader module.
 	 * @param RL\Context $context
 	 * @param Config $config
 	 * @return array
@@ -49,7 +49,7 @@ class ResourceLoaderHooks {
 	}
 
 	/**
-	 * Passes config variables to skins.citizen.search ResourceLoader module.
+	 * Passes config variables to skins.wisdom.search ResourceLoader module.
 	 * @param RL\Context $context
 	 * @param Config $config
 	 * @return array
@@ -72,7 +72,7 @@ class ResourceLoaderHooks {
 	}
 
 	/**
-	 * Passes config variables to skins.citizen.commandPalette ResourceLoader module.
+	 * Passes config variables to skins.wisdom.commandPalette ResourceLoader module.
 	 * @param RL\Context $context
 	 * @param Config $config
 	 * @return array

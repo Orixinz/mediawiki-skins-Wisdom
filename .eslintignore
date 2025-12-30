@@ -5,6 +5,6 @@ node_modules/
 vendor/
 
 # ES6 files
-resources/skins.citizen.scripts.search/typeahead-init.js
-resources/skins.citizen.scripts.search/underscore.partial.js
-resources/skins.citizen.scripts.search/wm-typeahead.js
+resources/skins.wisdom.scripts.search/typeahead-init.js
+resources/skins.wisdom.scripts.search/underscore.partial.js
+resources/skins.wisdom.scripts.search/wm-typeahead.js

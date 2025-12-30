@@ -22,7 +22,7 @@
 
 <script>
 const { defineComponent, ref, computed } = require( 'vue' );
-const { CdxTextInput } = mw.loader.require( 'skins.citizen.commandPalette.codex' );
+const { CdxTextInput } = mw.loader.require( 'skins.wisdom.commandPalette.codex' );
 const { cdxIconSearch } = require( '../icons.json' );
 
 // @vue/component

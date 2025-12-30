@@ -312,12 +312,12 @@ class SkinCitizen extends SkinMustache {
 
 		// CJK fonts
 		if ( $config->get( 'WisdomEnableCJKFonts' ) === true ) {
-			$options['styles'][] = 'skins.citizen.styles.fonts.cjk';
+			$options['styles'][] = 'skins.wisdom.styles.fonts.cjk';
 		}
 
 		// AR fonts
 		if ( $config->get( 'WisdomEnableARFonts' ) === true ) {
-			$options['styles'][] = 'skins.citizen.styles.fonts.ar';
+			$options['styles'][] = 'skins.wisdom.styles.fonts.ar';
 		}
 
 		// Header position

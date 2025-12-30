@@ -13,7 +13,7 @@ function registerServiceWorker() {
 	}
 
 	if ( 'serviceWorker' in navigator ) {
-		const SW_MODULE_NAME = 'skins.citizen.serviceWorker',
+		const SW_MODULE_NAME = 'skins.wisdom.serviceWorker',
 			version = mw.loader.moduleRegistry[ SW_MODULE_NAME ].version,
 			// HACK: Faking a RL link
 			swUrl = scriptPath +

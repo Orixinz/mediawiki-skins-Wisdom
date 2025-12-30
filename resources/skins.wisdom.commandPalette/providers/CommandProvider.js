@@ -44,17 +44,17 @@ function updateFlatTriggerList() {
  */
 function registerCommand( handler ) {
 	if ( typeof handler !== 'object' || handler === null ) {
-		mw.log.warn( '[skins.citizen.commandPalette|CommandProvider] Invalid handler provided for registration: not an object.' );
+		mw.log.warn( '[skins.wisdom.commandPalette|CommandProvider] Invalid handler provided for registration: not an object.' );
 		return false;
 	}
 	const commandId = handler.id;
 	if ( !commandId || typeof commandId !== 'string' || commandId.trim() === '' ) {
-		mw.log.warn( `[skins.citizen.commandPalette|CommandProvider] Invalid or missing command ID in handler: ${ commandId }` );
+		mw.log.warn( `[skins.wisdom.commandPalette|CommandProvider] Invalid or missing command ID in handler: ${ commandId }` );
 		return false;
 	}
 
 	if ( commandRegistry.has( commandId ) ) {
-		mw.log.warn( `[skins.citizen.commandPalette|CommandProvider] Command "${ commandId }" is already registered. Overwriting.` );
+		mw.log.warn( `[skins.wisdom.commandPalette|CommandProvider] Command "${ commandId }" is already registered. Overwriting.` );
 	}
 
 	commandRegistry.set( commandId, handler );
@@ -104,7 +104,7 @@ function getCommandListItems( filterPrefix ) {
 			highlightQuery: true
 		} ) );
 	} catch ( error ) {
-		mw.log.error( '[skins.citizen.commandPalette|CommandProvider|getCommandListItems] Error during mapping:', error );
+		mw.log.error( '[skins.wisdom.commandPalette|CommandProvider|getCommandListItems] Error during mapping:', error );
 		return []; // Return empty array in case of error
 	}
 }
@@ -114,7 +114,7 @@ Object.values( builtInCommands ).forEach( registerCommand );
 
 // Fire hook to allow extensions to register commands
 // Pass the registration function as data
-mw.hook( 'skins.citizen.commandPalette.registerCommand' ).fire( { registerCommand } );
+mw.hook( 'skins.wisdom.commandPalette.registerCommand' ).fire( { registerCommand } );
 
 /**
  * Finds the command handler that best matches the start of the query.
@@ -138,7 +138,7 @@ function findMatchingCommand( query ) {
 	const handler = commandRegistry.get( id );
 
 	if ( !handler ) {
-		mw.log.warn( `[skins.citizen.commandPalette|CommandProvider] Handler for command "${ id }" (matched via trigger "${ trigger }") not found in registry. This indicates an inconsistency.` );
+		mw.log.warn( `[skins.wisdom.commandPalette|CommandProvider] Handler for command "${ id }" (matched via trigger "${ trigger }") not found in registry. This indicates an inconsistency.` );
 		return null;
 	}
 
@@ -173,7 +173,7 @@ async function executeSubQueryCommand( handler, query, trigger, commandId ) {
 			source: `command:${ commandId }`
 		} ) ).slice( 0, MAX_COMMAND_RESULTS );
 	} catch ( err ) {
-		mw.log.error( `[skins.citizen.commandPalette|CommandProvider] Handler getResults for "${ commandId }" failed:`, err );
+		mw.log.error( `[skins.wisdom.commandPalette|CommandProvider] Handler getResults for "${ commandId }" failed:`, err );
 		return [];
 	}
 }
@@ -250,7 +250,7 @@ module.exports = {
 		// Extract handler ID from structured source (e.g., 'command:namespace')
 		const sourceParts = item.source?.split( ':' );
 		if ( sourceParts?.[ 0 ] !== 'command' || sourceParts.length < 2 ) {
-			mw.log.warn( `[skins.citizen.commandPalette|CommandProvider] Invalid source format for item: ${ item.source }` );
+			mw.log.warn( `[skins.wisdom.commandPalette|CommandProvider] Invalid source format for item: ${ item.source }` );
 			return { action: 'none' };
 		}
 
@@ -258,7 +258,7 @@ module.exports = {
 		const handler = commandRegistry.get( handlerId );
 
 		if ( !handler ) {
-			mw.log.warn( `[skins.citizen.commandPalette|CommandProvider] Could not find handler for source "${ item.source }". Item:`, item );
+			mw.log.warn( `[skins.wisdom.commandPalette|CommandProvider] Could not find handler for source "${ item.source }". Item:`, item );
 			return { action: 'none' };
 		}
 
@@ -283,7 +283,7 @@ module.exports = {
 				}
 			}
 		} catch ( err ) {
-			mw.log.error( `[skins.citizen.commandPalette|CommandProvider] Error during selection delegation for command handler "${ handlerId }":`, err, 'Item:', item );
+			mw.log.error( `[skins.wisdom.commandPalette|CommandProvider] Error during selection delegation for command handler "${ handlerId }":`, err, 'Item:', item );
 			return { action: 'none' };
 		}
 	}

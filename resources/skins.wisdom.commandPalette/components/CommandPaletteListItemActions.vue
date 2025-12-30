@@ -26,7 +26,7 @@
 
 <script>
 const { defineComponent, ref, computed, onBeforeUpdate } = require( 'vue' );
-const { CdxIcon, CdxButton } = mw.loader.require( 'skins.citizen.commandPalette.codex' );
+const { CdxIcon, CdxButton } = mw.loader.require( 'skins.wisdom.commandPalette.codex' );
 const { CommandPaletteActionEvent } = require( '../types.js' );
 const useActionNavigation = require( '../composables/useActionNavigation.js' );
 

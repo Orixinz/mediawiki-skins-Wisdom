@@ -48,7 +48,7 @@ function initBodyContent( bodyContent ) {
  */
 function initPreferences() {
 	document.getElementById( 'citizen-preferences-details' ).addEventListener( 'toggle', () => {
-		mw.loader.load( 'skins.citizen.preferences' );
+		mw.loader.load( 'skins.wisdom.preferences' );
 	},
 	{
 		once: true

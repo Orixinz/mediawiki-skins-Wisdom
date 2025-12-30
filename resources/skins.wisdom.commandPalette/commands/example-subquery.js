@@ -126,8 +126,8 @@ const exampleSubqueryCommand = {
 };
 
 // Register the command
-mw.loader.using( 'skins.citizen.commandPalette' ).then( () => {
-	mw.hook( 'skins.citizen.commandPalette.registerCommand' ).add( ( registrationData ) => {
+mw.loader.using( 'skins.wisdom.commandPalette' ).then( () => {
+	mw.hook( 'skins.wisdom.commandPalette.registerCommand' ).add( ( registrationData ) => {
 		if ( registrationData && registrationData.registerCommand ) {
 			registrationData.registerCommand( exampleSubqueryCommand );
 		}

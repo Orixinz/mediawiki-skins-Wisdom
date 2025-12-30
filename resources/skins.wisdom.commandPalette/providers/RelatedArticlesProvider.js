@@ -90,7 +90,7 @@ const RelatedArticlesProvider = {
 					cachedResults = resultsWithSource; // Update cache with source added
 					resolve( resultsWithSource );
 				} catch ( error ) {
-					mw.log.error( '[skins.citizen.commandPalette] RelatedArticlesProvider: Error inside mw.loader success callback:', error );
+					mw.log.error( '[skins.wisdom.commandPalette] RelatedArticlesProvider: Error inside mw.loader success callback:', error );
 					// Reset cache state fully on error
 					cachedResults = null;
 					fetchPromise = null;

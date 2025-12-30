@@ -246,7 +246,7 @@ function initSearch( window ) {
 	if ( config.wgCitizenEnableCommandPalette ) {
 		// Short-circuit the search module initialization,
 		// as it will be replaced by the command palette
-		mw.loader.load( 'skins.citizen.commandPalette' );
+		mw.loader.load( 'skins.wisdom.commandPalette' );
 		return;
 	}
 
