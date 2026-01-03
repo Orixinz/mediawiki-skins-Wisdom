@@ -8,6 +8,11 @@
 			<div class="citizen-drawer__siteinfo">
 				{{#data-site-stats}}{{>SiteStats}}{{/data-site-stats}}
 			</div>
+			<div class="citizen-drawer__options">
+				{{>Preferences}}
+				{{>UserMenu}}
+				{{#data-portlets.data-notifications}}{{>Menu}}{{/data-portlets.data-notifications}}
+			</div>
 		</header>
 		{{#data-main-menu}}
 			{{>MainMenu}}

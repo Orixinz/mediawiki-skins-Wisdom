@@ -46,6 +46,12 @@
 		}
 	}
 
+	&__options {
+		display: none;
+		flex-wrap: wrap;
+		flex-direction: var( --header-icon-direction );
+		justify-content: left;
+	}
 }
 
 
@@ -68,6 +74,15 @@
 
 		&__menu {
 			overflow: scroll;
+		}
+
+		&__siteinfo {
+			display: none;
+		}
+
+		&__options {
+			display: flex;
+			width: 100%;
 		}
 
 		display: none;
