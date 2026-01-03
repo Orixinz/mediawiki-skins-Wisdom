@@ -174,8 +174,7 @@ class SkinWisdom extends SkinMustache {
 				$this->shouldMakeSections( $title )
 			),
 			'data-mobilenav'=> new WisdomComponentMobileNav(
-				$localizer,
-				$parentData['data-mobilenav']
+				$localizer
 			)
 		];
 

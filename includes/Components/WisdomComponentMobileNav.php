@@ -9,7 +9,7 @@ use MediaWiki\Parser\Sanitizer;
 use MessageLocalizer;
 
 /**
- * WisdomComponentFooter component
+ * WisdomComponentMobileNav component
  */
 class WisdomComponentMobileNav implements WisdomComponent {
 
