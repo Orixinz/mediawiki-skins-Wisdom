@@ -5,6 +5,7 @@ declare( strict_types=1 );
 namespace MediaWiki\Skins\Wisdom\Components;
 
 use MediaWiki\Skins\Wisdom\Components\WisdomComponentMobileNavItem;
+use MediaWiki\Parser\Sanitizer;
 use MessageLocalizer;
 
 /**
@@ -21,14 +22,23 @@ class WisdomComponentMobileNav implements WisdomComponent {
 		$localizer = $this->localizer;
 		$listItems = [];
 
-		$listItem = new WisdomComponentMobileNavItem( 'nbnav-Menu', '', 'Build_Mode');
-		$listItems[0] = $listItem->getTemplateData();
+		$message = $this->localizer->msg( 'Mobilenav' )->text();
+		$lines = explode('*', $message);
 
-		$listItem = new WisdomComponentMobileNavItem( 'nbnav-Menu', '', 'Build_Mode');
-		$listItems[1] = $listItem->getTemplateData();
+		foreach ($lines as $line) {
+			if (strlen($line) == 0) {
+				continue;
+			}
 
-		$listItem = new WisdomComponentMobileNavItem( 'nbnav-Menu', '', 'Build_Mode');
-		$listItems[2] = $listItem->getTemplateData();
+			# properties[0] is image and properties [1] is link
+			$properties = explode('|', trim($message, '* '), 2);
+
+			$link = Sanitizer::escapeIdForAttribute( $properties[1] );
+			$img = Sanitizer::escapeIdForAttribute( $properties[0] );
+
+			$listItem = new WisdomComponentMobileNavItem("mbnav-$link", $img, $link);
+			$listItems[] = $listItem->getTemplateData();
+		}
 
 		return [
 			'array-list-items' => $listItems
