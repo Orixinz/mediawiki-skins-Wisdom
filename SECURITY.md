@@ -1,6 +1,6 @@
 # Security Policy
 
-This document outlines security procedures and policies for the Citizen skin.
+This document outlines security procedures and policies for the Wisdom skin.
 
 ## Supported Versions
 
@@ -8,11 +8,11 @@ Only the latest version of the skin is supported with security updates. Security
 
 ## Reporting a Vulnerability
 
-**Please do not report security vulnerabilities through public GitHub issues.**
+**Do not report security vulnerabilities through public GitHub issues.**
 
-Instead, please report all vulnerabilities privately [through GitHub](https://github.com/StarCitizenTools/mediawiki-skins-Citizen/security/advisories/new).
+Report all vulnerabilities privately [through GitHub](https://github.com/Orixinz/mediawiki-skins-Wisdom/security/advisories/new).
 
-You should receive a response within 24 hours. All coordination and disclosure are handled through the [GitHub advisory](https://github.com/StarCitizenTools/mediawiki-skins-Citizen/security).
+You should receive a response within 24 hours. All coordination and disclosure are handled through the [GitHub advisory](https://github.com/Orixinz/mediawiki-skins-Wisdom/security).
 
 We appreciate your efforts to responsibly disclose your findings, and will make every effort to acknowledge your contributions.
 

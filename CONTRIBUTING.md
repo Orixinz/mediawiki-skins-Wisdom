@@ -24,4 +24,4 @@ We will review your pull request and, if everything looks good, merge it into th
 
 ## Questions
 
-If you have any questions about contributing to *Wisdom*, feel free to [open an issue](https://github.com/Orixinz/mediawiki-skins-Wisdom/issues/new/choose) in the *Citizen* repository and ask.
+If you have any questions about contributing to *Wisdom*, feel free to [open an issue](https://github.com/Orixinz/mediawiki-skins-Wisdom/issues/new/choose) in the *Wisdom* repository and ask.
