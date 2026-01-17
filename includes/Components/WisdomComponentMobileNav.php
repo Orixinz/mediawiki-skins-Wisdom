@@ -23,7 +23,7 @@ class WisdomComponentMobileNav implements WisdomComponent {
 		$listItems = [];
 
 		$message = $this->localizer->msg( 'Mobilenav' )->text();
-		$lines = explode('*', $message);
+		$lines = explode('*', $message, 5);
 
 		foreach ($lines as $line) {
 			if (strlen($line) == 0) {
@@ -31,7 +31,7 @@ class WisdomComponentMobileNav implements WisdomComponent {
 			}
 
 			# properties[0] is image and properties [1] is link
-			$properties = explode('|', trim($message, '* '), 2);
+			$properties = explode('|', trim($line, '* '), 2);
 
 			$link = Sanitizer::escapeIdForAttribute( $properties[1] );
 			$img = Sanitizer::escapeIdForAttribute( $properties[0] );
