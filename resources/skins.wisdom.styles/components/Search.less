@@ -7,8 +7,6 @@
 
 	@media ( min-width: @min-width-breakpoint-desktop ) {
 		--height-search-bar: 3rem;
-		position: absolute;
-		z-index: 1;
 	}
 
 	.citizen-menu__card {
@@ -39,12 +37,6 @@
 
 		&[ open ] + .citizen-menu__card > .citizen-search__form {
 			transition: none; // Do not animate typeahead since it looks weird
-		}
-	}
-
-	@media ( min-width: @min-width-breakpoint-desktop ) {
-		.citizen-dropdown-summary {
-			.mixin-citizen-frosted-glass;
 		}
 	}
 

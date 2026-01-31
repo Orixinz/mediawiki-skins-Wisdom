@@ -156,15 +156,8 @@
 // To avoid more menu from overflow in narrow screen
 @media ( max-width: @max-width-breakpoint-tablet ) {
 	.page-actions {
-		position: fixed;
-		right: 0;
-		bottom: ~'calc( var( --header-size-block-end ) + max( env( safe-area-inset-bottom ), var( --space-xs ) ) )';
-		height: var( --toolbar-size );
-		margin: var( --space-xs );
-		background: var( --color-surface-1 );
-		border: 1px solid var( --border-color-base );
-		border-radius: var( --border-radius-medium );
-		box-shadow: var( --box-shadow-large );
+		position: relative;
+		top: 0;
 
 		:not( .citizen-menu__card ) .mw-list-item {
 			--size-icon: 1rem;
