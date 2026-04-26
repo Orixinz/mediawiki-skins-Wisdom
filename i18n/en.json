@@ -8,7 +8,7 @@
 		]
 	},
 	"skinname-wisdom": "Wisdom",
-	"wisdom-skin-desc": "A fork of Citizen but with a sidebar. ",
+	"wisdom-skin-desc": "A fork of Citizen 3.12.0 but with heavily modified navigation. ",
 	"citizen-prefs-talkpage": "[[mw:Skin_talk:Wisdom|Discussion]]",
 	"wisdom.css": "/* All CSS here will be loaded for users of the Wisdom skin */",
 	"wisdom.js": "/* All JavaScript here will be loaded for users of the Wisdom skin */",
