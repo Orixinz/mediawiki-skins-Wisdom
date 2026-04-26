@@ -9,9 +9,9 @@
 	},
 	"skinname-wisdom": "Wisdom",
 	"wisdom-skin-desc": "A fork of Citizen but with a sidebar. ",
-	"citizen-prefs-talkpage": "[[mw:Skin_talk:Citizen|Discussion]]",
-	"citizen.css": "/* All CSS here will be loaded for users of the Citizen skin */",
-	"citizen.js": "/* All JavaScript here will be loaded for users of the Citizen skin */",
+	"citizen-prefs-talkpage": "[[mw:Skin_talk:Wisdom|Discussion]]",
+	"wisdom.css": "/* All CSS here will be loaded for users of the Wisdom skin */",
+	"wisdom.js": "/* All JavaScript here will be loaded for users of the Wisdom skin */",
 	"citizen-drawer-toggle": "Toggle menu",
 	"citizen-usermenu-toggle": "Toggle personal menu",
 	"citizen-preferences-toggle": "Toggle preferences menu",
@@ -31,8 +31,6 @@
 	"citizen-page-info-copyright": "Copyright",
 	"citizen-page-info-credits": "Credits",
 	"citizen-page-info-lastmod": "Last modified",
-	"citizen-footer-desc": "Edit this text on [[MediaWiki:Citizen-footer-desc]]",
-	"citizen-footer-tagline": "Edit this text on [[MediaWiki:Citizen-footer-tagline]]",
 	"citizen-action-addsection": "Add topic",
 	"citizen-jumptotop": "Back to top",
 
@@ -125,5 +123,8 @@
 	"citizen-command-palette-tip-templates": "Type <code><nowiki>{{</nowiki></code> to search for templates",
 	"citizen-command-palette-tip-actions": "Type <code>></code> for a list of actions",
 
-	"mobilenav": ""
+	"mobilenav": "",
+
+	"wisdom-footer-desc": "Edit this text on [[MediaWiki:Wisdom-footer-desc]]",
+	"wisdom-footer-tagline": "Edit this text on [[MediaWiki:Wisdom-footer-tagline]]"
 }

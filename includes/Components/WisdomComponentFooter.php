@@ -22,8 +22,8 @@ class WisdomComponentFooter implements WisdomComponent {
 		$footerData = $this->footerData;
 
 		return $footerData + [
-			'msg-citizen-footer-desc' => $localizer->msg( "citizen-footer-desc" )->inContentLanguage()->parse(),
-			'msg-citizen-footer-tagline' => $localizer->msg( "citizen-footer-tagline" )->inContentLanguage()->parse()
+			'msg-citizen-footer-desc' => $localizer->msg( "wisdom-footer-desc" )->inContentLanguage()->parse(),
+			'msg-citizen-footer-tagline' => $localizer->msg( "wisdom-footer-tagline" )->inContentLanguage()->parse()
 		];
 	}
 }
