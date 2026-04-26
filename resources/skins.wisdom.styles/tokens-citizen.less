@@ -11,14 +11,14 @@
 	.theme-base();
 
 	// Border
-	--border-radius-medium: calc( var( --border-radius-base ) * 2 );
-	--border-radius-large: calc( var( --border-radius-base ) * 3 );
+	--border-radius-medium: calc(var(--border-radius-base) * 2);
+	--border-radius-large: calc(var(--border-radius-base) * 3);
 
 	// Box shadow
-	--box-shadow-border: var( --border-color-base ) 0 0 0 1px;
+	--box-shadow-border: var(--border-color-base) 0 0 0 1px;
 
 	// Filter
-	--filter-invert-fixed: invert( 1 ) hue-rotate( 180deg );
+	--filter-invert-fixed: invert(1) hue-rotate(180deg);
 
 	// Font
 	--font-family-citizen-base: 'Roboto', 'Roboto-fallback';
@@ -48,7 +48,7 @@
 	// Width of the body content
 	--width-layout: @width-layout;
 	// Width of the body content when the page should be extended (e.g. special, category pages)
-	--width-layout--extended: calc( var( --width-layout ) * 1.5 );
+	--width-layout--extended: calc(var(--width-layout) * 1.5);
 	// Width of the table of contents
 	--width-toc: @width-toc;
 	/// Width of the page
@@ -59,67 +59,68 @@
 
 	// Spacing
 	--space-unit: @space-unit;
-	--space-xxs: calc( 0.25 * var( --space-unit ) );
-	--space-xs: calc( 0.5 * var( --space-unit ) );
-	--space-sm: calc( 0.75 * var( --space-unit ) );
-	--space-md: var( --space-unit );
-	--space-lg: calc( 1.25 * var( --space-unit ) );
-	--space-xl: calc( 1.5 * var( --space-unit ) );
-	--space-xxl: calc( 2 * var( --space-unit ) );
+	--space-xxs: calc(0.25 * var(--space-unit));
+	--space-xs: calc(0.5 * var(--space-unit));
+	--space-sm: calc(0.75 * var(--space-unit));
+	--space-md: var(--space-unit);
+	--space-lg: calc(1.25 * var(--space-unit));
+	--space-xl: calc(1.5 * var(--space-unit));
+	--space-xxl: calc(2 * var(--space-unit));
 
 	// Transition
 	--transition-delay-menu: 100ms;
 	// @see https://www.joshwcomeau.com/animation/css-transitions/#custom-curves-7
-	--transition-timing-function-ease: cubic-bezier( 0.44, 0.21, 0, 1 );
-	--transition-timing-function-ease-in: cubic-bezier( 0.75, 0, 1, 1 );
-	--transition-timing-function-ease-out: cubic-bezier( 0.215, 0.61, 0.355, 1 );
+	--transition-timing-function-ease: cubic-bezier(0.44, 0.21, 0, 1);
+	--transition-timing-function-ease-in: cubic-bezier(0.75, 0, 1, 1);
+	--transition-timing-function-ease-out: cubic-bezier(0.215, 0.61, 0.355, 1);
 
 	// Transform
 	// Add affordance to thumbnails to replace magnify icon
 	// On hover, enlarge the image to inform the user that a full-size image will be shown (to MMV or file page)
-	--transform-image-hover: scale( 1.1 );
+	--transform-image-hover: scale(1.1);
 
 	// Codex Design Tokens but not included as CSS variables
-	--border-base: var( --border-width-base ) solid var( --border-color-base );
-	--border-subtle: var( --border-width-base ) solid var( --border-color-subtle );
+	--border-base: var(--border-width-base) solid var(--border-color-base);
+	--border-subtle: var(--border-width-base) solid var(--border-color-subtle);
 	--border-width-base: 1px;
 	--border-width-thick: 2px;
 	--border-radius-base: 4px;
 	--border-radius-sharp: 0;
 	--border-radius-pill: 9999px;
 	--border-radius-circle: 50%;
-	--box-shadow-small: 0 0 0 1px var( --border-color-base );
+	--box-shadow-small: 0 0 0 1px var(--border-color-base);
 	// @see https://www.joshwcomeau.com/shadow-palette
-	--box-shadow-medium: 0 0.5px 0.6px var( --box-shadow-color-alpha-base ), 0 1.6px 1.8px -0.8px var( --box-shadow-color-alpha-base ), 0 4px 4.5px -1.7px var( --box-shadow-color-alpha-base ), 0 9.8px 11px -2.5px var( --box-shadow-color-alpha-base );
-	--box-shadow-large: 0 0.5px 0.6px var( --box-shadow-color-alpha-base ), 0 2.8px 3.1px -0.4px var( --box-shadow-color-alpha-base ), 0 5.3px 6px -0.7px var( --box-shadow-color-alpha-base ), 0 8.7px 9.8px -1.1px var( --box-shadow-color-alpha-base ), 0 13.9px 15.6px -1.4px var( --box-shadow-color-alpha-base ), 0 21.8px 24.5px -1.8px var( --box-shadow-color-alpha-base );
+	--box-shadow-medium: 0 0.5px 0.6px var(--box-shadow-color-alpha-base), 0 1.6px 1.8px -0.8px var(--box-shadow-color-alpha-base), 0 4px 4.5px -1.7px var(--box-shadow-color-alpha-base), 0 9.8px 11px -2.5px var(--box-shadow-color-alpha-base);
+	--box-shadow-large: 0 0.5px 0.6px var(--box-shadow-color-alpha-base), 0 2.8px 3.1px -0.4px var(--box-shadow-color-alpha-base), 0 5.3px 6px -0.7px var(--box-shadow-color-alpha-base), 0 8.7px 9.8px -1.1px var(--box-shadow-color-alpha-base), 0 13.9px 15.6px -1.4px var(--box-shadow-color-alpha-base), 0 21.8px 24.5px -1.8px var(--box-shadow-color-alpha-base);
 	--font-family-base: @font-family-base;
 	--font-family-serif: @font-family-serif;
 	--font-family-monospace: @font-family-monospace;
 	--font-weight-normal: 400;
-	--font-weight-medium: calc( var( --font-weight-normal ) + 100 );
-	--font-weight-semi-bold: calc( var( --font-weight-normal ) + 200 );
-	--font-weight-bold: calc( var( --font-weight-normal ) + 300 );
-	--font-family-overline: var( --font-family-base );
-	--font-weight-overline: var( --font-weight-medium );
-	--font-size-overline: var( --font-size-small );
-	--line-height-overline: var( --line-height-small );
+	--font-weight-medium: calc(var(--font-weight-normal) + 100);
+	--font-weight-semi-bold: calc(var(--font-weight-normal) + 200);
+	--font-weight-bold: calc(var(--font-weight-normal) + 300);
+	--font-family-overline: var(--font-family-base);
+	--font-weight-overline: var(--font-weight-medium);
+	--font-size-overline: var(--font-size-small);
+	--line-height-overline: var(--line-height-small);
 	--text-transform-overline: none;
 	--letter-spacing-overline: normal;
 
-	@media ( min-width: @min-width-breakpoint-tablet ) {
-		--padding-page: calc( @padding-page * 1.5 );
+	@media (min-width: @min-width-breakpoint-tablet ) {
+		--padding-page: calc(@padding-page * 1.5);
 	}
 
-	@media ( min-width: @min-width-breakpoint-desktop ) {
-		--padding-page: calc( @padding-page * 2 );
-		--header-card-maxheight: calc( 100vh - var( --space-sm ) * 2 );
+	@media (min-width: @min-width-breakpoint-desktop ) {
+		--padding-page: calc(@padding-page * 2);
+		--header-card-maxheight: calc(100vh - var(--space-sm) * 2);
+		--header-dropdown-justify: left;
 	}
 
-	@media ( prefers-contrast: more ) {
+	@media (prefers-contrast: more) {
 		--font-weight-normal: 500;
 	}
 
-	@media ( prefers-contrast: less ) {
+	@media (prefers-contrast: less) {
 		--font-weight-normal: 300;
 	}
 
@@ -142,7 +143,7 @@
 	--header-border-inline-end-width: 0px;
 
 	// Mobile Header
-	@media ( max-width: @max-width-breakpoint-tablet ) {
+	@media (max-width: @max-width-breakpoint-tablet ) {
 		--header-direction: row;
 		--header-icon-direction: row;
 
@@ -152,14 +153,18 @@
 
 		--header-inset-inline-start: 0px;
 		--header-inset-inline-end: 0px;
-		--header-size-block-end: var( --header-size );
+		--header-size-block-end: var(--header-size);
 		--header-inset-block-start: auto;
 		--header-inset-block-end: 0;
-		--header-border-block-start-width: var( --border-width-base );
+		--header-border-block-start-width: var(--border-width-base);
+
+		--header-dropdown-justify: center;
+		--header-dropdown-align: flex-end;
 	}
 
 	&.citizen-header-position {
-		@media ( min-width: @min-width-breakpoint-desktop ) {
+		@media (min-width: @min-width-breakpoint-desktop ) {
+
 			&-left,
 			&-right {
 				--header-direction: column;
@@ -168,6 +173,7 @@
 				--header-inset-block-end: 0px;
 				--header-width: var(--header-size);
 				--header-height: 100vh;
+				--header-dropdown-align: flex-start;
 			}
 
 			&-top,
@@ -181,47 +187,50 @@
 			}
 
 			&-left {
-				--header-size-inline-start: var( --header-size );
+				--header-size-inline-start: var(--header-size);
 				--header-inset-inline-start: 0px;
 				--header-inset-inline-end: auto;
-				--header-border-inline-end-width: var( --border-width-base );
+				--header-border-inline-end-width: var(--border-width-base);
 			}
 
 			&-right {
-				--header-size-inline-end: var( --header-size );
+				--header-size-inline-end: var(--header-size);
 				--header-inset-inline-start: auto;
 				--header-inset-inline-end: 0px;
-				--header-border-inline-start-width: var( --border-width-base );
+				--header-border-inline-start-width: var(--border-width-base);
 			}
 
 			&-top {
-				--header-size-block-start: var( --header-size );
+				--header-size-block-start: var(--header-size);
 				--header-inset-block-start: 0px;
 				--header-inset-block-end: auto;
-				--header-border-block-end-width: var( --border-width-base );
+				--header-border-block-end-width: var(--border-width-base);
+				--header-dropdown-align: flex-start;
 			}
 
 			&-bottom {
-				--header-size-block-end: var( --header-size );
+				--header-size-block-end: var(--header-size);
 				--header-inset-block-start: auto;
 				--header-inset-block-end: 0px;
-				--header-border-block-start-width: var( --border-width-base );
+				--header-border-block-start-width: var(--border-width-base);
+				--header-dropdown-align: flex-end;
 			}
 		}
 	}
+
 	// stylelint-enable length-zero-no-unit
 
 	// Deprecated tokens
-	--color-primary__h: var( --color-progressive-hsl__h );
-	--color-primary__s: var( --color-progressive-hsl__s );
-	--color-primary__l: var( --color-progressive-hsl__l );
-	--font-size-base: var( --font-size-medium );
+	--color-primary__h: var(--color-progressive-hsl__h);
+	--color-primary__s: var(--color-progressive-hsl__s);
+	--color-primary__l: var(--color-progressive-hsl__l);
+	--font-size-base: var(--font-size-medium);
 	--line-height: 1.6;
 	--line-height-xxx-small: 1.25; // Deprecated with Codex 2.0
 	--line-height-xx-small: 1.375; // Deprecated with Codex 2.0
-	--box-shadow-drop-small: var( --box-shadow-small );
-	--box-shadow-drop-medium: var( --box-shadow-medium );
-	--box-shadow-drop-xx-large: var( --box-shadow-large );
+	--box-shadow-drop-small: var(--box-shadow-small);
+	--box-shadow-drop-medium: var(--box-shadow-medium);
+	--box-shadow-drop-xx-large: var(--box-shadow-large);
 }
 
 // TODO: Update with implementation on T376559 when it is finalized
@@ -236,6 +245,6 @@
 // These values requires input from the body element
 body {
 	// Only block-start is needed because sticky header is always on top
-	--header-offset-block-start: calc( var( --header-size-block-start ) + var( --height-sticky-header ) );
-	--header-offset-block-end: var( --header-size-block-end );
+	--header-offset-block-start: calc(var(--header-size-block-start) + var(--height-sticky-header));
+	--header-offset-block-end: var(--header-size-block-end);
 }

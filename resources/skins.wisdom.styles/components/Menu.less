@@ -1,17 +1,17 @@
 .citizen-menu {
-	.mixin-citizen-font-styles( 'small' );
+	.mixin-citizen-font-styles('small');
 
 	&__card {
-		--transform-origin-offset-start: var( --space-xs );
+		--transform-origin-offset-start: var(--space-xs);
 		--transform-origin-offset-end: ~'calc( 100% - var( --space-xs ) )';
-		margin: var( --space-xs );
+		margin: var(--space-xs);
 		contain: content;
 		-webkit-user-select: none;
 		user-select: none;
-		border: var( --border-width-base ) solid var( --border-color-base );
-		border-radius: var( --border-radius-medium );
-		box-shadow: var( --box-shadow-large );
-		transform: scale( 0 );
+		border: var(--border-width-base) solid var(--border-color-base);
+		border-radius: var(--border-radius-medium);
+		box-shadow: var(--box-shadow-large);
+		transform: scale(0);
 		.mixin-citizen-frosted-glass;
 
 		&-content {
@@ -24,10 +24,10 @@
 
 	&__heading {
 		display: block;
-		padding: var( --space-xs ) var( --space-md );
+		padding: var(--space-xs) var(--space-md);
 		margin: 0;
-		color: var( --color-subtle );
-		.mixin-citizen-font-styles( 'overline' );
+		color: var(--color-subtle);
+		.mixin-citizen-font-styles('overline');
 	}
 
 	&__content-list {
@@ -38,21 +38,21 @@
 	.mw-list-item {
 		a {
 			display: flex;
-			gap: var( --space-sm );
+			gap: var(--space-sm);
 			align-items: center;
 			min-height: 2.25rem;
-			padding-inline: var( --space-md );
-			font-weight: var( --font-weight-medium );
-			color: var( --color-base );
-			transition: var( --transition-hover );
+			padding-inline: var(--space-md);
+			font-weight: var(--font-weight-medium);
+			color: var(--color-base);
+			transition: var(--transition-hover);
 			transition-property: opacity;
 
 			&:hover {
-				background-color: var( --background-color-button-quiet--hover );
+				background-color: var(--background-color-button-quiet--hover);
 			}
 
 			&:active {
-				background-color: var( --background-color-button-quiet--active );
+				background-color: var(--background-color-button-quiet--active);
 			}
 
 			&:hover,
@@ -68,14 +68,14 @@
 // https://gerrit.wikimedia.org/g/mediawiki/core/+/master/resources/lib/codex/mixins/css-icon.less
 .citizen-ui-icon {
 	display: block;
-	width: var( --size-icon );
-	min-width: var( --size-icon );
-	height: var( --size-icon );
-	min-height: var( --size-icon );
+	width: var(--size-icon);
+	min-width: var(--size-icon);
+	height: var(--size-icon);
+	min-height: var(--size-icon);
 	contain: strict;
 	content-visibility: auto;
-	transition-timing-function: var( --transition-timing-function-ease );
-	transition-duration: var( --transition-duration-base );
+	transition-timing-function: var(--transition-timing-function-ease);
+	transition-duration: var(--transition-duration-base);
 	transition-property: content-visibility;
 	transition-behavior: allow-discrete;
 
@@ -96,6 +96,7 @@
 }
 
 .mw-portlet {
+
 	// Hide selected item
 	.selected {
 		.mixin-citizen-screen-reader-only;
@@ -110,8 +111,9 @@
 // HACK: Restore view button on revision page (#845)
 // There are no good way to target revision page
 .action-view {
-	&:has( .diff ),
-	&:has( .mw-revision ) {
+
+	&:has(.diff),
+	&:has(.mw-revision) {
 		#ca-view {
 			position: relative;
 			width: auto;

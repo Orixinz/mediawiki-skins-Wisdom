@@ -8,8 +8,8 @@
 			<div class="citizen-drawer__siteinfo">
 				{{#data-site-stats}}{{>SiteStats}}{{/data-site-stats}}
 			</div>
+			{{! on mobile user stuff including notifications is moved into drawer}}
 			<div class="citizen-drawer__options">
-				{{>Preferences}}
 				{{>UserMenu}}
 				{{#data-portlets.data-notifications}}{{>Menu}}{{/data-portlets.data-notifications}}
 			</div>

@@ -3,16 +3,18 @@
 	string msg-citizen-drawer-toggle The label used by the drawer button
 }}
 <header class="mw-header citizen-header">
-	{{#data-search-box}}{{>Search}}{{/data-search-box}}
+
 	{{>Header__logo}}
 	<div class="citizen-header__inner">
+		{{#data-search-box}}{{>Search}}{{/data-search-box}}
 		{{>MobileNav}}
-		<div class="citizen-header__options">
-			{{>Preferences}}
-			{{>UserMenu}}
-			{{#data-portlets.data-notifications}}{{>Menu}}{{/data-portlets.data-notifications}}
-		</div>
+		{{>Preferences}}
+
 	</div>
 	{{>Drawer__button}}
 	{{>Drawer}}
+	<div class="citizen-header__options">
+		{{>UserMenu}}
+		{{#data-portlets.data-notifications}}{{>Menu}}{{/data-portlets.data-notifications}}
+	</div>
 </header>
