@@ -9,6 +9,7 @@ Only the latest version of the skin is supported with security updates. Security
 ## Reporting a Vulnerability
 
 **Do not report security vulnerabilities through public GitHub issues.**
+If the vulnerability is also in Citizen, report the issue through their procedures. Wisdom backports Citizen security updates.
 
 Report all vulnerabilities privately [through GitHub](https://github.com/Orixinz/mediawiki-skins-Wisdom/security/advisories/new).
 
